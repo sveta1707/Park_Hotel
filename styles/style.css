@@ -1,0 +1,593 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+header {
+    padding: 30px 0 31px;
+    background-color:#20535080 ;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+header a:not(:last-child)::after {
+    content:"";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #FFF;
+    margin: 0 45px;
+    vertical-align: middle;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        font-size: 1.125rem;
+        padding: 24px 0 25px;
+    } 
+    header a:not(:last-child)::after {
+        width: 25px;
+        margin: 0 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 0.9375rem;
+        padding: 19px 0 20px;
+    }
+    header a:not(:last-child)::after {
+        width: 20px;
+        margin: 0 28px;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    header a:not(:last-child)::after {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+.wrapper {
+    max-width: 1176px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+@media screen and (max-width: 1176px) {
+    .wrapper {
+        padding-right: 43px;
+        padding-left: 41px;
+    }
+}
+
+.banner {
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+    padding: 450px 0 130px;
+}
+
+h1 {
+    font-size: 3.75rem;
+    margin-bottom: 30px;
+}
+
+.banner .text {
+    max-width: 495px;
+    margin: 0 auto 60px;
+}
+
+.banner a:not(:last-child) {
+    display: block;
+    width: 312px;
+    height: 60px;
+    background: #AE5F3D;
+    border-radius: 30px;
+    line-height: 60px;
+    margin: 0 auto;
+}
+
+.banner a:hover {
+    background-color: red;
+    transition: linear 0.8s;
+}
+
+.arrow::after {
+    content: "";
+    width: 57px;
+    height: 20px;
+    display: block;
+    background-image: url(../icons/arrow.svg);
+    margin: 80px auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner .text {
+        max-width: 356px;
+        margin: 0 auto 45px;
+    }
+    .banner a:not(:last-child) {
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+    }
+    .arrow::after {
+        margin: 40px auto 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner .text {
+        margin: 0 auto 35px;
+    }
+    .arrow::after {
+        margin: 27px auto 0;
+    }
+}
+
+section {
+     padding: 100px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section {
+        padding: 70px 0;
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.about-us-type .text {
+    max-width: 608px;
+    margin: 0 auto;
+}
+
+.about-us-type h2 {
+    margin: 30px 0 37px;
+}
+
+.text {
+    font-size: 1.5625rem;
+}
+
+.about-us-type img {
+    width: 100%;
+    max-width: 617px;
+}
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 2.1875rem;
+    }
+    .text {
+        font-size: 1.375rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us-type h2 {
+        margin: 25px 0 32px;
+
+    }
+    .about-us-type .text {
+        max-width: 571px;
+        margin: 0 auto 70px;
+    }
+}
+
+.our-entertainments {
+     background-color: #F5F5F5;
+}
+
+.our-entertainments .text {
+    max-width: 520px;
+    margin: 37px auto 30px;
+    font-size: 1.25rem;
+}
+
+.our-entertainments article {
+    display: inline-block;
+    width: calc((100% - 24px * 2) / 3);
+    max-width: 444px;
+    background-color:#FFFFFF ;
+    border-radius: 30px;
+    padding: 30px 5px;
+    font-size: 1.25rem;
+}
+
+.our-entertainments article:not(:last-child) {
+    margin-right: 24px;
+}
+
+h3 {
+    font-size: 1.5625rem;
+    margin:25px 0 20px;
+}
+
+.our-entertainments i {
+    font-size: 10.625rem;
+    color: #AE5F3D;
+}
+
+@media screen and (max-width: 1024px) { 
+    .our-entertainments article:not(:last-child) {
+        margin-right: 20px;
+    }
+    .our-entertainments article {
+        width: calc((100% - 20px * 2) / 3);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .our-entertainments article {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .our-entertainments article:not(:last-child) {
+        margin: 0 auto 30px;
+    }
+}
+
+.our-apartments .text {
+    max-width: 617px;
+    margin: 30px auto 55px;
+    font-size: 1.5625rem;
+}
+
+.our-apartments article {
+    display: inline-block;
+    width: calc((100% - 2 * 48px) / 3);
+    max-width:  698px;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+}
+
+.our-apartments article:not(:last-child) {
+    margin-right: 48px;
+}
+
+.our-apartments h3 {
+    margin: 25px 0 15px;
+}
+
+.our-apartments p {
+    font-size: 1.125rem;
+    color:#474747;
+}
+
+.our-apartments img {
+    width: 100%;
+    max-width: 698px;
+}
+
+.our-apartments article::after {
+    content: "";
+    width: 132px;
+    background-color: #FFFFFFCC;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    line-height: 18.75px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.our-apartments article:first-of-type::after{
+    content: "от 7 т.р./сутки";
+}
+.our-apartments article:nth-of-type(2)::after {
+    content: "от 23 т.р./сутки";
+}
+.our-apartments article:nth-of-type(3)::after   {
+    content: "от 13 т.р./сутки";
+}
+
+.type-2::before {
+    content: "VIP";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F24040;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    color: #FFFFFF;
+    line-height: 50px;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+@media screen and ( max-width: 1024px) {
+    .our-apartments .text {
+        margin: 30px auto;
+    }
+    .our-apartments article {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .our-apartments article:not(:last-child) {
+        margin: 0 auto 75px;
+    }
+}
+
+@media screen and ( max-width: 768px) {
+    .our-apartments .text {
+        max-width: 590px;
+        margin: 20px auto 80px;
+    }
+    .our-apartments article {
+        max-width:  590px;
+         
+    }
+    .our-apartments article:not(:last-child) {
+        margin-bottom: 80px;
+    }
+}
+
+.booking-blok {
+    background-color: #F5F5F5;
+}
+
+form {
+    max-width: 1016px;
+    padding: 100px 121px 100px 119px;
+    background-color: #FFF;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+form h2 {
+    text-align: center;
+}
+    
+.booking-blok .text {
+    font-size: 1.25rem;
+    color: #474747;
+    max-width:  572px;
+    margin: 30px auto 50px;
+    text-align: center;
+}
+   
+.input-title {
+    display: block;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.user-input {
+    margin-bottom: 18px;
+    width: 100%;
+    height: 60px;
+    padding-left: 35px;
+}
+
+.user-input:focus {
+    outline-color:#AE5F3D ;
+}
+
+.booking-blok div {
+    text-align: left;
+    font-size: 1.375rem;
+}
+  
+.booking-blok div:not(:last-of-type) {
+   margin-bottom: 20px;
+}
+
+.form-paragraf  {
+   margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    font-size: 1.25rem;
+}
+
+button {
+    display: block;
+    color: #FFF;
+    height: 60px;
+    max-width: 404px;
+    width: 100%;
+    margin: 40px auto 0;
+    border-radius: 30px;
+    background-color: #AE5F3D;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+    transition: linear 0.8s;
+}
+
+h4 {
+    font-size: 1.875rem;
+}
+
+@media screen and (max-width: 1024px) {
+    form {
+        max-width: 820px;
+        padding: 80px 68px 80px 67px;
+    }
+    .booking-blok .text {
+        font-size: 1.375rem;
+        margin: 30px auto 30px;
+    }
+    .user-input {
+        margin-bottom: 16px;
+        height: 53px;
+    }
+    .form-paragraf  {
+        font-size: 1.25rem;
+    }
+    input[type="radio"] {
+        margin-right: 15px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    form {
+        max-width: 720px;
+        padding: 70px 52px 70px 53px;
+    }
+    .booking-blok .text {
+         max-width: 506px;
+         margin: 25px auto 35px;
+    }
+    .input-title {
+        margin-bottom: 20px;
+    }
+    .user-input {
+        margin-bottom: 17px;
+        height: 58px;
+    }
+    input[type="radio"] {
+         margin-right: 13px;
+    }
+}
+
+footer {
+    padding:  70px 0;
+}
+
+.menu {
+    width: 150px;
+    margin: 35px auto;
+}
+
+.menu a {
+    font-size: 0.9375rem;
+    color: #000;
+    display: block;
+}
+
+.menu a:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.menu a:first-child::before,.menu a:last-child::after {
+    content:"";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color:#737373;
+    margin: 25px 0;
+}
+
+.socials  a {
+    display: inline-block;
+    font-size: 1.75rem;
+    color: #000000;
+    text-align: center;
+}
+
+.socials a:not(:last-child) {
+    margin-right: 30px;
+}
+
+.socials a:hover {
+    transform: scale(1.2);
+}
+
+.socials a::before {
+    content: "";
+    width: 22px;
+    height: 24px;
+    display: inline-block;
+}
+
+.vk::before {
+   background-image: url(../icons/vk.svg);
+}
+
+.whatsapp::before {
+    background-image: url(../icons/whatsapp.svg)
+}
+
+.telegram::before {
+    background-image: url(../icons/telegram.svg)
+}
+
+.instagram::before {
+    background-image: url(../icons/instagram.svg)
+}
+
+.arrow-up::after {
+    content: "";
+    width: 20px ;
+    height: 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-image: url(../icons/circle-arrow-up-solid.svg);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        padding:  50px 0;
+    }
+    .menu {
+        width: 140px;
+        margin: 25px auto;
+        padding: 20px 0;
+    }
+    .menu a {
+        font-size: 0.8125rem;
+    }
+    .socials  a {
+         padding: 25px 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 90px;
+    }
+    .menu a:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
